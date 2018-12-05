@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Quizz</string>
+    <string name="autoPassword">Password</string>
+    <string name="autoName">Name</string>
+    <string name="btnLoginText">Login</string>
+    <string name="titleLoginActivity">Login</string>
+    <string name="titleCategoryActivity">Choose a cateogory</string>
+    <string name="txtCategory1">Category 1</string>
+    <string name="txtCategory2">Category 2</string>
+    <string name="txtCateoory3">Category 3</string>
+    <string name="txtCategory4">Category 4</string>
+    <string name="btnCategoryText">Select</string>
+    <string name="btnSingUpText">Sign Up</string>
 </resources>
