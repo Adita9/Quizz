@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ro.ase.acs.quizz">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,7 +20,9 @@
         <activity
             android:name=".activity.Navigation.Navigation"
             android:label="@string/title_activity_navigation" />
-        <activity android:name=".activity.Profile"></activity>
+        <activity android:name=".activity.Profile" />
+        <activity android:name=".activity.Quizz"></activity>
+
     </application>
 
 </manifest>
