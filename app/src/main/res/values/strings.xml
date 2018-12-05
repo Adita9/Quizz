@@ -11,4 +11,20 @@
     <string name="txtCategory4">Category 4</string>
     <string name="btnCategoryText">Select</string>
     <string name="btnSingUpText">Sign Up</string>
+    <string name="singup">Password</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="profilepicture">profilePicture</string>
+    <string name="score">Score :</string>
+    <string name="profileName">Name :</string>
+    <string name="hello_mr_name_your_best_score_is">Hello Mr. Name, your best score is :</string>
 </resources>
