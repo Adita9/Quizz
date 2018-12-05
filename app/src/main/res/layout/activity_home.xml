@@ -38,10 +38,11 @@
         android:layout_height="89dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toStartOf="@+id/im_homeProfile"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/quickquizz"
-        tools:layout_editor_absoluteY="187dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_homeName"
+        app:srcCompat="@drawable/quickquizz" />
 
     <ImageView
         android:id="@+id/im_homeLeaderBoard"
@@ -70,10 +71,12 @@
     <TextView
         android:id="@+id/tv_homeProfile"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="8dp"
         android:text="Profile"
-        tools:layout_editor_absoluteX="263dp"
-        tools:layout_editor_absoluteY="170dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_homeName" />
 
     <TextView
         android:id="@+id/tv_homeLeadrboard"
