@@ -1,6 +1,7 @@
 package ro.ase.acs.quizz.activity;
 
-import android.content.Intent;
+
+
 import android.os.AsyncTask;
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
@@ -20,15 +21,40 @@ import java.net.URL;
 
 import ro.ase.acs.quizz.Model.Question;
 import ro.ase.acs.quizz.R;
+import ro.ase.acs.quizz.activity.Navigation.User;
 
 public class Home extends AppCompatActivity {
-ImageView imQuizz;
-Question question = null;
+
+
+    ImageView homeProfile;
+    TextView tvGreeting;
+    ImageView imQuizz;
+     Question question = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-            imQuizz = findViewById(R.id.im_homeQuizz);
+
+        tvGreeting = findViewById(R.id.tv_homeName);
+
+        Intent i = getIntent();
+        User userName = (User) i.getSerializableExtra("user");
+        int points;
+        points = i.getIntExtra("points", 0);
+
+        tvGreeting.setText("Hello Mr. "+userName+"! Your score is: "+points);
+
+        homeProfile = (ImageView) findViewById(R.id.im_homeProfile);
+        homeProfile.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),Profile.class);
+                startActivity(i);
+            }
+
+        });
+
+        imQuizz = findViewById(R.id.im_homeQuizz);
         imQuizz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,6 +87,7 @@ Question question = null;
         question=questions[0];
         return question;
         }
+
     }
 
 
