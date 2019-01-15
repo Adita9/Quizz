@@ -11,8 +11,8 @@ import ro.ase.acs.quizz.*;
 import ro.ase.acs.quizz.Model.Answer;
 
 
-public class ListViewAdapter extends ArrayAdapter<Answer> {
-    public ListViewAdapter(@NonNull Context context, int resource, @NonNull List<Answer> objects) {
+public class ListViewAdapter extends ArrayAdapter<String> {
+    public ListViewAdapter(@NonNull Context context, int resource, @NonNull List<String> objects) {
         super(context, resource, objects);
     }
 }

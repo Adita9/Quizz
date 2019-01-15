@@ -1,5 +1,7 @@
 package ro.ase.acs.quizz.activity.Navigation;
 
+import android.graphics.Bitmap;
+
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -7,8 +9,10 @@ public class User implements Serializable {
     String username;
     String password;
     String email;
+    int points;
+    Bitmap bitmap;
 
-    public User(String username, String password, String email) {
+    public User(String username, String password, String email, int points, Bitmap bitmap) {
         this.username = username;
         this.password = password;
         this.email = email;
