@@ -29,4 +29,5 @@
     <string name="hello_mr_name_your_best_score_is">Hello Mr. Name, your best score is :</string>
     <string name="checkbox">Checkbox</string>
     <string name="textItem">text</string>
+    <string name="GenerateCSV">generateCsv</string>
 </resources>
