@@ -17,6 +17,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import ro.ase.acs.quizz.Login;
 import ro.ase.acs.quizz.R;
 import ro.ase.acs.quizz.activity.Navigation.User;
 
@@ -29,6 +30,7 @@ public class SignUp extends AppCompatActivity {
     TextView tvExistent;
     FirebaseAuth firebaseAuth;
     DatabaseReference databaseReference;
+    Button btnLoginIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,7 @@ public class SignUp extends AppCompatActivity {
         tvExistent = findViewById(R.id.textView3);
         firebaseAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference();
+        btnLoginIn=findViewById(R.id.btn_singUpLogin);
 
         btnSingUp.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -88,6 +91,13 @@ public class SignUp extends AppCompatActivity {
 
             }
 
+        });
+        btnLoginIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+            }
         });
 
     }

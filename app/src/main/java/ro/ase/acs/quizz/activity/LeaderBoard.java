@@ -54,7 +54,7 @@ public class LeaderBoard extends AppCompatActivity {
                 Collections.sort(users);
                 List<String> leaderboard = new ArrayList<>();
                 for(User u : users){
-                    leaderboard.add("Username"+u.getUsername()+"points"+u.getPoints());
+                    leaderboard.add("Username" +" = "+u.getUsername()+" has "+ ":"+u.getPoints()+"points");
                 }
                 listViewAdapter = new ListViewAdapter(getApplicationContext(), R.layout.list_view_item, leaderboard);
                 listView = findViewById(R.id.listviewLeader);
